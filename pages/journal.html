@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Travel Journal | Bryan's Villas</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-teal-500 {
+            color: #14b8a6;
+        }
+        .bg-teal-500 {
+            background-color: #14b8a6;
+        }
+        .border-teal-500 {
+            border-color: #14b8a6;
+        }
+        .hover\:bg-teal-600:hover {
+            background-color: #0d9488;
+        }
+        .hover\:bg-teal-50:hover {
+            background-color: #f0fdfa;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+<header class="bg-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<a href="../index.html" class="text-2xl font-bold text-gray-700">Bryan's Villas</a>
+<nav class="hidden md:flex space-x-6 text-gray-600">
+<a class="hover:text-teal-500" href="villas.html">Villas</a>
+<a class="hover:text-teal-500" href="experiences.html">Experiences</a>
+<a class="text-teal-500 font-semibold" href="journal.html">Journal</a>
+<a class="hover:text-teal-500" href="about.html">About Us</a>
+<a class="hover:text-teal-500" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="text-gray-600 hover:text-teal-500">
+<span class="material-icons">search</span>
+</button>
+<button class="text-gray-600 hover:text-teal-500">
+<span class="material-icons">favorite_border</span>
+</button>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm">My Enquiry</button>
+</div>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-teal-500 to-blue-600 text-white py-24">
+<div class="container mx-auto px-4 text-center">
+<h1 class="font-playfair text-5xl font-bold mb-4">Travel Journal</h1>
+<p class="text-xl mb-8 max-w-3xl mx-auto">Discover insider tips, hidden gems, and inspiring stories from St. Lucia and beyond</p>
+</div>
+</section>
+
+<!-- Categories -->
+<section class="bg-white py-8 shadow-sm">
+<div class="container mx-auto px-4">
+<div class="flex flex-wrap gap-4 items-center justify-center">
+<button class="bg-teal-500 text-white px-6 py-2 rounded-full font-medium">All Articles</button>
+<button class="bg-gray-100 hover:bg-teal-50 hover:text-teal-600 px-6 py-2 rounded-full font-medium">Destinations</button>
+<button class="bg-gray-100 hover:bg-teal-50 hover:text-teal-600 px-6 py-2 rounded-full font-medium">Villa Spotlights</button>
+<button class="bg-gray-100 hover:bg-teal-50 hover:text-teal-600 px-6 py-2 rounded-full font-medium">Travel Tips</button>
+<button class="bg-gray-100 hover:bg-teal-50 hover:text-teal-600 px-6 py-2 rounded-full font-medium">Food & Drink</button>
+</div>
+</div>
+</section>
+
+<!-- Featured Article -->
+<section class="container mx-auto px-4 py-16">
+<div class="bg-white rounded-lg shadow-xl overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<img alt="St. Lucia Pitons sunset" class="w-full h-80 lg:h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkcYskgLLRX-fJvpvRU0KJ_nOe2WJQPEGWMEN8K20aFXVtQOCP4hnkDIuskIJZyVEMA-8-SeW9iS71ZLGkXiS7yCgwq5ZM6nsTCEf6Ottf7eEIlCDr898Z225jeN6wbu-uhZgfWa3wK7EMeccm-rOTzaAvGc9bkrlYhkXr1zbnG8ugiSheXRGVAgjY4mwvMZKTFc6sitP4YGhfOn8PuCWW-B6uwHeOVZ2FkSn908rz0tG_s0DeEmUJgj7l4NXa3ndkw0sivNqTkWM"/>
+<div class="p-8 lg:p-12 flex flex-col justify-center">
+<div class="flex items-center mb-4">
+<span class="bg-teal-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Featured</span>
+<span class="text-gray-500 text-sm ml-4">December 15, 2023</span>
+</div>
+<h2 class="font-playfair text-3xl font-bold text-gray-700 mb-4">The Ultimate Guide to St. Lucia's Hidden Gems</h2>
+<p class="text-gray-600 mb-6">Discover the secret spots and local favorites that make St. Lucia truly magical. From secluded beaches to authentic rum distilleries, uncover the island's best-kept secrets with our insider guide.</p>
+<div class="flex items-center mb-6">
+<img alt="Author Sarah Mitchell" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa7RlKdRJhVSszsW4Wb3wBMzYVGjf5hE195uLxP7h1tivR-8N_s0_550TUjdPyDvmWEjLDySM9Uchu4ZrxO2KR6Bnwd6Yr_rp_86FI07SwxJtdpBFgdktIEhcxu0tmPjrbcWaP4hmgVYfCQaMUZ5LIxnnHJQRjiyO81xmkVcoq6tYrssGJTq1M_0QdQOJa7lnEG96-EgbIU5Jbl_XsZDRGOM8EWC6C4mS55HzrRcjbmLeo6ba9RNWZ2Vpjw-uChF5JpWptJobF4oc"/>
+<div>
+<p class="font-semibold text-gray-700">Sarah Mitchell</p>
+<p class="text-gray-500 text-sm">Travel Expert</p>
+</div>
+</div>
+<a href="#" class="bg-teal-500 text-white px-6 py-3 rounded-md hover:bg-teal-600 font-semibold inline-block">Read Full Article</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Article Grid -->
+<section class="container mx-auto px-4 pb-16">
+<h2 class="font-playfair text-3xl font-bold text-gray-700 mb-8 text-center">Latest Articles</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- Article 1 -->
+<article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Villa spotlight" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8KT3LsGZ5xLHRkE15dmG489Yx-PSwekEo1xWG5Kv-Tl5_gQwB0zF6D3XM-5QxiM2A6zH9AFK4Ndbgi6gJA80V3NTDxdtW-Ixx_ocHLC27pwIyoK82AguT5AIzZ1n1pGbsVhWox5Ntp_NXlZEyji8mQZKooQz_NzcE682hcNm3DZ_F7-q3HNJINt6tGGOudaMfukLqrXm4_53w208V3hyq4cDvKAIVT-3kNJTPQTYRpcQjgeolb-LQW3ofLkEiBe99gMa3IJHWuAo"/>
+<div class="p-6">
+<div class="flex items-center mb-3">
+<span class="bg-blue-100 text-blue-600 px-2 py-1 rounded text-xs font-semibold">Villa Spotlight</span>
+<span class="text-gray-500 text-sm ml-4">Dec 12, 2023</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-gray-700 mb-3">Smugglers Nest: A Slice of Paradise</h3>
+<p class="text-gray-600 mb-4">Step inside one of St. Lucia's most coveted villas, where luxury meets authentic Caribbean charm...</p>
+<a href="#" class="text-teal-500 hover:underline font-semibold">Read More →</a>
+</div>
+</article>
+
+<!-- Article 2 -->
+<article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Caribbean cuisine" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB-m-Ay2CQ3ju3dmsPfddMRx4ZMG7wgBTrgrlRkX9CY4fQ-dG2jM28m4Au1waZe0K7BdoU9a8v1AzRzIQluFFyj2UoD1p54UVdNGISgvCI7XhKGKRPFZL0cscl4-g0vMQnxdVi_NeifqzdySf4uFsp-DQtWzwCv_z9lAYvLqE3b2RJ3MVq2e1bi75z7vzSivEF2FXAVigOMczZ0KMyPkTFnP86PsiRnAx5PKsoVszKj_K9U0ubpZpX6pltTQzSGFznaD9dk7eneo4"/>
+<div class="p-6">
+<div class="flex items-center mb-3">
+<span class="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-semibold">Food & Drink</span>
+<span class="text-gray-500 text-sm ml-4">Dec 10, 2023</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-gray-700 mb-3">A Culinary Journey Through St. Lucia</h3>
+<p class="text-gray-600 mb-4">From street food to fine dining, explore the flavors that make St. Lucian cuisine truly special...</p>
+<a href="#" class="text-teal-500 hover:underline font-semibold">Read More →</a>
+</div>
+</article>
+
+<!-- Article 3 -->
+<article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Adventure activities" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN6jEOG54vkw-UzqkDtkvahJC-uXS0DEzCRpf64c2ljb89LjALyS1hiavO3cxxSspP-LSQj_P3h8hpRXa5VXISwkinDe5MO5aMYN2MKxNAbK5HmFG3ukGghbmd6tpL3mybX-V-JRmAktc-hjqbLmlziqLiM4vrw1-xlquRu7nts-o35F3cO9AhMaLk5jemoiv-b33mj5006YYB7jpsEsHwIO2un3Hx4lTBnFf9DTO7NPmBh3lLyH1ShSvcgjb0-d8Rd0OCPJfvTUs"/>
+<div class="p-6">
+<div class="flex items-center mb-3">
+<span class="bg-orange-100 text-orange-600 px-2 py-1 rounded text-xs font-semibold">Adventure</span>
+<span class="text-gray-500 text-sm ml-4">Dec 8, 2023</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-gray-700 mb-3">Top 10 Adventures in St. Lucia</h3>
+<p class="text-gray-600 mb-4">From hiking the Pitons to diving coral reefs, discover the most thrilling experiences the island offers...</p>
+<a href="#" class="text-teal-500 hover:underline font-semibold">Read More →</a>
+</div>
+</article>
+
+<!-- Article 4 -->
+<article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Luxury travel tips" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs9YJLGNFu_sxmoIrCWL4OtcslGf8W2i03iAaEEYd_9VwMsmiHcDXc0COxRHIRrX467_xLiVBmR2Y4aLktjsKWV_HFDOgTmuNBL4x9S3siDkiey12krXivbm6Ommh_SPnF0r0yxrWyi4hLZzlsf1enLLPNkqSSmgPH8-QcmTsePKwS3LyWK69ZLiPVRxgWG-YibKIvgD-GYr0oCXxozvpTZasEa5g5m2Nh1Lh2ly90OtYISXbQ4knL7qOK6INM98o8oNot-qSJ1C8"/>
+<div class="p-6">
+<div class="flex items-center mb-3">
+<span class="bg-purple-100 text-purple-600 px-2 py-1 rounded text-xs font-semibold">Travel Tips</span>
+<span class="text-gray-500 text-sm ml-4">Dec 5, 2023</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-gray-700 mb-3">Packing for Your Caribbean Villa Holiday</h3>
+<p class="text-gray-600 mb-4">Essential items and insider tips for making the most of your luxury villa vacation...</p>
+<a href="#" class="text-teal-500 hover:underline font-semibold">Read More →</a>
+</div>
+</article>
+
+<!-- Article 5 -->
+<article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Wellness and spa" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBedESYRZZ0jrBlGtpqcZajFcAlY6yTy4abd14ZVj3GkKFdiSB-Kqqk3RuZd0ox46cAy0OnRcU-p_s3L8znvwfEQ9fX7zkw1pcbOnQFrDf0md2lCwY5o-ntjRCvd-bl1shI59ujslKcosIvKK8RF3QhLgnvLgtlDxsurhqVdETwic3QLYTcm_nWHUJZDVwl595Q7mcxZKm9pn94YwasJs6Fr2WzSpCf-UR4JwDDlU3IWiM5ekYnfUX--VQ_JtjVO-2NSRRTpfDpT2Y"/>
+<div class="p-6">
+<div class="flex items-center mb-3">
+<span class="bg-pink-100 text-pink-600 px-2 py-1 rounded text-xs font-semibold">Wellness</span>
+<span class="text-gray-500 text-sm ml-4">Dec 3, 2023</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-gray-700 mb-3">Wellness Retreats in Paradise</h3>
+<p class="text-gray-600 mb-4">Discover how to transform your villa holiday into a rejuvenating wellness retreat...</p>
+<a href="#" class="text-teal-500 hover:underline font-semibold">Read More →</a>
+</div>
+</article>
+
+<!-- Article 6 -->
+<article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Local culture" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIsJe0k_4OidrUa09pdgrFuBl5Fac0NciIERwWqjCFm5Nn49FZxXWNSkzXtBtb97-dnGm6tWPy7w0VWVpwJ0HQwthIyQ6UtgfevFo2MLY3uZQJvVkaARpMB0O07Nr_Kd7vTLbjLwGKPiA7uOVSND_cZu9XkBpdcZCm_NkX4XmI9ZuNfQHpRmrgsPkmRH8QFRQPVB6jBr_flju8Gv2t0zrHypDKsjualTTdx-b86M8dRURM1BwDBoc3-J4R3qwkaTMYS736uHZm60w"/>
+<div class="p-6">
+<div class="flex items-center mb-3">
+<span class="bg-yellow-100 text-yellow-600 px-2 py-1 rounded text-xs font-semibold">Culture</span>
+<span class="text-gray-500 text-sm ml-4">Dec 1, 2023</span>
+</div>
+<h3 class="font-playfair text-xl font-bold text-gray-700 mb-3">Immersing in St. Lucian Culture</h3>
+<p class="text-gray-600 mb-4">Experience the rich heritage, music, and traditions that make St. Lucia culturally unique...</p>
+<a href="#" class="text-teal-500 hover:underline font-semibold">Read More →</a>
+</div>
+</article>
+
+</div>
+
+<!-- Load More -->
+<div class="text-center mt-12">
+<button class="bg-gray-200 text-gray-700 px-8 py-3 rounded-md hover:bg-gray-300 font-semibold">Load More Articles</button>
+</div>
+</section>
+
+<!-- Newsletter Signup -->
+<section class="bg-white py-16">
+<div class="container mx-auto px-4 text-center">
+<h2 class="font-playfair text-3xl font-bold text-gray-700 mb-4">Stay Inspired</h2>
+<p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Get the latest travel insights, villa spotlights, and exclusive destination guides delivered to your inbox.</p>
+<div class="max-w-md mx-auto">
+<form class="flex">
+<input class="flex-grow px-4 py-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" placeholder="Your email address" type="email"/>
+<button class="bg-teal-500 text-white px-6 py-3 rounded-r-md hover:bg-teal-600 font-semibold" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-gray-800 text-gray-300 py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
+<div>
+<h5 class="font-bold text-white mb-3">Company</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="about.html">About Us</a></li>
+<li><a class="hover:text-teal-400" href="villas.html">Our Villas</a></li>
+<li><a class="hover:text-teal-400" href="journal.html">Journal</a></li>
+<li><a class="hover:text-teal-400" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Help</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="contact.html">Contact Us</a></li>
+<li><a class="hover:text-teal-400" href="#">FAQs</a></li>
+<li><a class="hover:text-teal-400" href="#">Booking T&Cs</a></li>
+<li><a class="hover:text-teal-400" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Destinations</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="#">Caribbean</a></li>
+<li><a class="hover:text-teal-400" href="#">Europe</a></li>
+<li><a class="hover:text-teal-400" href="#">Asia</a></li>
+<li><a class="hover:text-teal-400" href="#">UK & Ireland</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Connect</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="#">Facebook</a></li>
+<li><a class="hover:text-teal-400" href="#">Instagram</a></li>
+<li><a class="hover:text-teal-400" href="#">Twitter</a></li>
+<li><a class="hover:text-teal-400" href="#">Pinterest</a></li>
+</ul>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h5 class="font-bold text-white mb-3">Newsletter</h5>
+<p class="text-sm mb-2">Sign up for travel inspiration and exclusive offers.</p>
+<form class="flex">
+<input class="bg-gray-700 text-white px-3 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-teal-500 flex-grow text-sm" placeholder="Your email" type="email"/>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-r-md hover:bg-teal-600 text-sm" type="submit">Sign Up</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+<p>© 2023 Bryan's Villas. All rights reserved.</p>
+<div class="flex space-x-4 mt-4 md:mt-0">
+<img alt="ABTA logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAlCU0jqL5mVTDtQqcL8NaMIGbMZZiBwIRD-xZKHsZzYJ_AcnFiZ4Mmt_rBkW40qjq69DHpIpeObVDIQVYCMWo-U6rbydp5pykvQTUEdRAcJ6NCCKRXK7gE9Rz1iSGSyzPXtNj_v5hYJcD5uATgZUYx9U2zYIsBJwtzsKE_9XwXlqiGR0asDyDiXUx9wmZ9XuIJphhOl6aMT5TejEHEPglpsahjf-VoG7lOMV6FeV__7xfFdxw7RGbhnS3gO7GZB1WVasPV5VYaAM"/>
+<img alt="ATOL Protected logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJSkbq3SyLw7Fe6HVE8B0wdwBNq8RY3enytLJN1SKyxVCtKvVEy5sD6_Ei_ZmjNUQtKdfQ6KLrIxTIACsNcarSaaFQSGZBNF5-YRFSeTouiQfJWXm-zrlVJVoPE5bQZmM6HZ7KJaJ3J82BefwT_7P4M2e3YD9CoJlQkJYqEMlkBfgHLRaS3lCgsAQ9u1aUHIyOTmwancBc12vGgZ07fsELl0SXrf_Cw37t9zixJDramx4heYa3qyRM41Vr5Zmep-znxkoi-taEJks"/>
+<img alt="Feefo logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBENBCybeBXnuC-0L-UEP-ramL8ImX2dLOH6o7cH30NhNq9MTY2_hgit6oGNCuOMm23AxWsw-6lfTwN7m7QaGt4TTTrFdJWUSsB5SX581YWKiywyzed9R7pjl-thTq4qgxnkdLKOYvFwH-bf8HwM3vVskCpJuSNK6eBp7tm7c9kDkAFORoce3Vedc4GAYKMZG9NLNaFCsLrXexiqg0qDG2EixRTs0QE5LzfKsJbcTUj4GcL7NWIkQTHYfjU58XcRWaDQbrt_UlhCno8"/>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html> 

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Bryan's Villas</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-teal-500 {
+            color: #14b8a6;
+        }
+        .bg-teal-500 {
+            background-color: #14b8a6;
+        }
+        .border-teal-500 {
+            border-color: #14b8a6;
+        }
+        .hover\:bg-teal-600:hover {
+            background-color: #0d9488;
+        }
+        .hover\:bg-teal-50:hover {
+            background-color: #f0fdfa;
+        }
+        .focus\:ring-teal-500:focus {
+            --tw-ring-color: #14b8a6;
+        }
+        .focus\:border-teal-500:focus {
+            border-color: #14b8a6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+<header class="bg-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<a href="../index.html" class="text-2xl font-bold text-gray-700">Bryan's Villas</a>
+<nav class="hidden md:flex space-x-6 text-gray-600">
+<a class="hover:text-teal-500" href="villas.html">Villas</a>
+<a class="hover:text-teal-500" href="experiences.html">Experiences</a>
+<a class="hover:text-teal-500" href="journal.html">Journal</a>
+<a class="hover:text-teal-500" href="about.html">About Us</a>
+<a class="text-teal-500 font-semibold" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="text-gray-600 hover:text-teal-500">
+<span class="material-icons">search</span>
+</button>
+<button class="text-gray-600 hover:text-teal-500">
+<span class="material-icons">favorite_border</span>
+</button>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm">My Enquiry</button>
+</div>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-teal-500 to-blue-600 text-white py-24">
+<div class="container mx-auto px-4 text-center">
+<h1 class="font-playfair text-5xl font-bold mb-4">Get in Touch</h1>
+<p class="text-xl mb-8 max-w-3xl mx-auto">Our travel experts are here to help you plan your perfect St. Lucia villa holiday</p>
+</div>
+</section>
+
+<!-- Contact Options -->
+<section class="container mx-auto px-4 py-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+<div class="bg-white rounded-lg shadow-lg p-8 text-center">
+<div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-icons text-teal-500 text-2xl">phone</span>
+</div>
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-4">Call Us</h3>
+<p class="text-gray-600 mb-4">Speak directly with our villa experts</p>
+<p class="text-3xl font-bold text-teal-500 mb-4">0333 000 0000</p>
+<p class="text-sm text-gray-500">Open 7 days a week<br/>9am - 9pm</p>
+</div>
+<div class="bg-white rounded-lg shadow-lg p-8 text-center">
+<div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-icons text-teal-500 text-2xl">email</span>
+</div>
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-4">Email Us</h3>
+<p class="text-gray-600 mb-4">Send us your travel requirements</p>
+<p class="text-lg font-semibold text-teal-500 mb-4">hello@bryansvillas.com</p>
+<p class="text-sm text-gray-500">We respond within<br/>2 hours during business hours</p>
+</div>
+<div class="bg-white rounded-lg shadow-lg p-8 text-center">
+<div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-icons text-teal-500 text-2xl">chat</span>
+</div>
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-4">Live Chat</h3>
+<p class="text-gray-600 mb-4">Get instant answers to your questions</p>
+<button class="bg-teal-500 text-white px-6 py-3 rounded-md hover:bg-teal-600 font-semibold mb-4">Start Chat</button>
+<p class="text-sm text-gray-500">Available<br/>Monday - Friday 9am - 6pm</p>
+</div>
+</div>
+
+<!-- Contact Form -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="bg-white rounded-lg shadow-lg p-8">
+<h2 class="font-playfair text-3xl font-bold text-gray-700 mb-6">Send us an Enquiry</h2>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="firstName">First Name</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="firstName" name="firstName" required type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="lastName">Last Name</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="lastName" name="lastName" required type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="email">Email Address</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="email" name="email" required type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="phone">Phone Number</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="phone" name="phone" type="tel"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="checkIn">Check-in Date</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="checkIn" name="checkIn" type="date"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="checkOut">Check-out Date</label>
+<input class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="checkOut" name="checkOut" type="date"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="guests">Number of Guests</label>
+<select class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="guests" name="guests">
+<option value="">Select number of guests</option>
+<option value="1-2">1-2 guests</option>
+<option value="3-4">3-4 guests</option>
+<option value="5-6">5-6 guests</option>
+<option value="7-8">7-8 guests</option>
+<option value="9+">9+ guests</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="budget">Budget Range</label>
+<select class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="budget" name="budget">
+<option value="">Select budget range</option>
+<option value="under-1000">Under £1,000 per night</option>
+<option value="1000-2000">£1,000 - £2,000 per night</option>
+<option value="2000-3000">£2,000 - £3,000 per night</option>
+<option value="3000+">£3,000+ per night</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2" for="message">Tell us about your ideal holiday</label>
+<textarea class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500" id="message" name="message" rows="4" placeholder="Share any special requirements, interests, or questions..."></textarea>
+</div>
+<div class="flex items-start">
+<input class="mt-1 mr-3" id="newsletter" name="newsletter" type="checkbox"/>
+<label class="text-sm text-gray-600" for="newsletter">I'd like to receive travel inspiration and exclusive offers by email</label>
+</div>
+<button class="w-full bg-teal-500 text-white py-3 px-6 rounded-md hover:bg-teal-600 font-semibold text-lg" type="submit">Send Enquiry</button>
+</form>
+</div>
+
+<!-- Contact Information -->
+<div class="space-y-8">
+<div class="bg-white rounded-lg shadow-lg p-8">
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-6">Our Office</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<span class="material-icons text-teal-500 mr-3 mt-1">location_on</span>
+<div>
+<p class="font-semibold text-gray-700">Bryan's Villas Head Office</p>
+<p class="text-gray-600">123 Travel Street<br/>London, SW1A 1AA<br/>United Kingdom</p>
+</div>
+</div>
+<div class="flex items-center">
+<span class="material-icons text-teal-500 mr-3">schedule</span>
+<div>
+<p class="font-semibold text-gray-700">Office Hours</p>
+<p class="text-gray-600">Monday - Friday: 9am - 6pm<br/>Saturday - Sunday: 10am - 4pm</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-white rounded-lg shadow-lg p-8">
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-6">Our Specialists</h3>
+<div class="space-y-6">
+<div class="flex items-center">
+<img alt="Emma Thompson" class="w-16 h-16 rounded-full mr-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN8zU0Lm_2zbbp4AAWuzyRlNrfOsLW_1hB_D8e7RrzvahqmYIEj7yCE3FWN6dFsxza6SXAKXGbYWi-oskVAp6Jv4RpuC1Jr2pKDLNg-Rd7cyE8PMsr5gGeP1_fdFBjMwVKt3Kf4IB-t6MgtJB98AjT1An_NkJJE9780AiRQmfBu12fj80Nz0kuGl4gpmzkrjNB_cDYiELAyz1IzDPvRjnfGEnfFMBQaz77FXfrqHSYQ2UNi1vtIUfQbei91O-kJdYhg0jYIVCDvo4"/>
+<div>
+<h4 class="font-semibold text-gray-700">Emma Thompson</h4>
+<p class="text-teal-500 text-sm">St. Lucia Specialist</p>
+<p class="text-gray-600 text-sm">Expert in Caribbean luxury villas</p>
+</div>
+</div>
+<div class="flex items-center">
+<img alt="James Rodriguez" class="w-16 h-16 rounded-full mr-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBedESYRZZ0jrBlGtpqcZajFcAlY6yTy4abd14ZVj3GkKFdiSB-Kqqk3RuZd0ox46cAy0OnRcU-p_s3L8znvwfEQ9fX7zkw1pcbOnQFrDf0md2lCwY5o-ntjRCvd-bl1shI59ujslKcosIvKK8RF3QhLgnvLgtlDxsurhqVdETwic3QLYTcm_nWHUJZDVwl595Q7mcxZKm9pn94YwasJs6Fr2WzSpCf-UR4JwDDlU3IWiM5ekYnfUX--VQ_JtjVO-2NSRRTpfDpT2Y"/>
+<div>
+<h4 class="font-semibold text-gray-700">James Rodriguez</h4>
+<p class="text-teal-500 text-sm">Experience Curator</p>
+<p class="text-gray-600 text-sm">Specializes in bespoke experiences</p>
+</div>
+</div>
+<div class="flex items-center">
+<img alt="Sarah Mitchell" class="w-16 h-16 rounded-full mr-4 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQuuujjwyhE4SrXsqfMaVtRTFG-b3fRBnU3Sm25feeub4safDHFAo-aafMkj7snPPe0VthWDfrn-rDEZ3141LEaCGiMr8XbDzxeB5Gy761wcwKWSl_gWg2blXlKUaKy1v4kgaP7Hbcdy6y6-HaYNVlG2G7BItlK7kRmCzhQnz6RwO8ywGO-SKKyeVoPGR1CFOiOQnsZVvCWug8Cp5YgvvVzmFfAL67q86QWKLAXU2OLjZyCD1J9V9MXy2L7y-01g0Fo9RzaXeC9kM"/>
+<div>
+<h4 class="font-semibold text-gray-700">Sarah Mitchell</h4>
+<p class="text-teal-500 text-sm">Villa Expert</p>
+<p class="text-gray-600 text-sm">Handpicks exceptional properties</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bg-white rounded-lg shadow-lg p-8">
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-6">Quick Links</h3>
+<div class="space-y-3">
+<a href="#" class="flex items-center text-teal-500 hover:text-teal-600">
+<span class="material-icons mr-2 text-sm">help</span>
+<span>Frequently Asked Questions</span>
+</a>
+<a href="#" class="flex items-center text-teal-500 hover:text-teal-600">
+<span class="material-icons mr-2 text-sm">description</span>
+<span>Booking Terms & Conditions</span>
+</a>
+<a href="#" class="flex items-center text-teal-500 hover:text-teal-600">
+<span class="material-icons mr-2 text-sm">security</span>
+<span>Privacy Policy</span>
+</a>
+<a href="#" class="flex items-center text-teal-500 hover:text-teal-600">
+<span class="material-icons mr-2 text-sm">payment</span>
+<span>Payment Information</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Reviews Section -->
+<section class="bg-white py-16">
+<div class="container mx-auto px-4">
+<h2 class="font-playfair text-4xl font-bold text-gray-700 mb-12 text-center">What Our Guests Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="flex text-yellow-400 mb-4">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+</div>
+<p class="text-gray-600 mb-4 italic">"The team at Bryan's Villas made our St. Lucia vacation absolutely perfect. Their attention to detail and local knowledge was exceptional."</p>
+<div class="flex items-center">
+<img alt="Guest review" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa7RlKdRJhVSszsW4Wb3wBMzYVGjf5hE195uLxP7h1tivR-8N_s0_550TUjdPyDvmWEjLDySM9Uchu4ZrxO2KR6Bnwd6Yr_rp_86FI07SwxJtdpBFgdktIEhcxu0tmPjrbcWaP4hmgVYfCQaMUZ5LIxnnHJQRjiyO81xmkVcoq6tYrssGJTq1M_0QdQOJa7lnEG96-EgbIU5Jbl_XsZDRGOM8EWC6C4mS55HzrRcjbmLeo6ba9RNWZ2Vpjw-uChF5JpWptJobF4oc"/>
+<div>
+<h4 class="font-semibold text-gray-700">Michael & Sarah</h4>
+<p class="text-gray-500 text-sm">London, UK</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="flex text-yellow-400 mb-4">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+</div>
+<p class="text-gray-600 mb-4 italic">"From villa selection to concierge services, everything was handled with professionalism and care. Highly recommended!"</p>
+<div class="flex items-center">
+<img alt="Guest review" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQuuujjwyhE4SrXsqfMaVtRTFG-b3fRBnU3Sm25feeub4safDHFAo-aafMkj7snPPe0VthWDfrn-rDEZ3141LEaCGiMr8XbDzxeB5Gy761wcwKWSl_gWg2blXlKUaKy1v4kgaP7Hbcdy6y6-HaYNVlG2G7BItlK7kRmCzhQnz6RwO8ywGO-SKKyeVoPGR1CFOiOQnsZVvCWug8Cp5YgvvVzmFfAL67q86QWKLAXU2OLjZyCD1J9V9MXy2L7y-01g0Fo9RzaXeC9kM"/>
+<div>
+<h4 class="font-semibold text-gray-700">The Williams Family</h4>
+<p class="text-gray-500 text-sm">Manchester, UK</p>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 rounded-lg p-6">
+<div class="flex text-yellow-400 mb-4">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+</div>
+<p class="text-gray-600 mb-4 italic">"The villa exceeded our expectations and the local experiences they arranged were unforgettable. Will definitely book again!"</p>
+<div class="flex items-center">
+<img alt="Guest review" class="w-12 h-12 rounded-full mr-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBedESYRZZ0jrBlGtpqcZajFcAlY6yTy4abd14ZVj3GkKFdiSB-Kqqk3RuZd0ox46cAy0OnRcU-p_s3L8znvwfEQ9fX7zkw1pcbOnQFrDf0md2lCwY5o-ntjRCvd-bl1shI59ujslKcosIvKK8RF3QhLgnvLgtlDxsurhqVdETwic3QLYTcm_nWHUJZDVwl595Q7mcxZKm9pn94YwasJs6Fr2WzSpCf-UR4JwDDlU3IWiM5ekYnfUX--VQ_JtjVO-2NSRRTpfDpT2Y"/>
+<div>
+<h4 class="font-semibold text-gray-700">David & Emma</h4>
+<p class="text-gray-500 text-sm">Edinburgh, UK</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-gray-800 text-gray-300 py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
+<div>
+<h5 class="font-bold text-white mb-3">Company</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="about.html">About Us</a></li>
+<li><a class="hover:text-teal-400" href="villas.html">Our Villas</a></li>
+<li><a class="hover:text-teal-400" href="journal.html">Journal</a></li>
+<li><a class="hover:text-teal-400" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Help</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="contact.html">Contact Us</a></li>
+<li><a class="hover:text-teal-400" href="#">FAQs</a></li>
+<li><a class="hover:text-teal-400" href="#">Booking T&Cs</a></li>
+<li><a class="hover:text-teal-400" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Destinations</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="#">Caribbean</a></li>
+<li><a class="hover:text-teal-400" href="#">Europe</a></li>
+<li><a class="hover:text-teal-400" href="#">Asia</a></li>
+<li><a class="hover:text-teal-400" href="#">UK & Ireland</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Connect</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="#">Facebook</a></li>
+<li><a class="hover:text-teal-400" href="#">Instagram</a></li>
+<li><a class="hover:text-teal-400" href="#">Twitter</a></li>
+<li><a class="hover:text-teal-400" href="#">Pinterest</a></li>
+</ul>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h5 class="font-bold text-white mb-3">Newsletter</h5>
+<p class="text-sm mb-2">Sign up for travel inspiration and exclusive offers.</p>
+<form class="flex">
+<input class="bg-gray-700 text-white px-3 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-teal-500 flex-grow text-sm" placeholder="Your email" type="email"/>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-r-md hover:bg-teal-600 text-sm" type="submit">Sign Up</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+<p>© 2023 Bryan's Villas. All rights reserved.</p>
+<div class="flex space-x-4 mt-4 md:mt-0">
+<img alt="ABTA logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAlCU0jqL5mVTDtQqcL8NaMIGbMZZiBwIRD-xZKHsZzYJ_AcnFiZ4Mmt_rBkW40qjq69DHpIpeObVDIQVYCMWo-U6rbydp5pykvQTUEdRAcJ6NCCKRXK7gE9Rz1iSGSyzPXtNj_v5hYJcD5uATgZUYx9U2zYIsBJwtzsKE_9XwXlqiGR0asDyDiXUx9wmZ9XuIJphhOl6aMT5TejEHEPglpsahjf-VoG7lOMV6FeV__7xfFdxw7RGbhnS3gO7GZB1WVasPV5VYaAM"/>
+<img alt="ATOL Protected logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJSkbq3SyLw7Fe6HVE8B0wdwBNq8RY3enytLJN1SKyxVCtKvVEy5sD6_Ei_ZmjNUQtKdfQ6KLrIxTIACsNcarSaaFQSGZBNF5-YRFSeTouiQfJWXm-zrlVJVoPE5bQZmM6HZ7KJaJ3J82BefwT_7P4M2e3YD9CoJlQkJYqEMlkBfgHLRaS3lCgsAQ9u1aUHIyOTmwancBc12vGgZ07fsELl0SXrf_Cw37t9zixJDramx4heYa3qyRM41Vr5Zmep-znxkoi-taEJks"/>
+<img alt="Feefo logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBENBCybeBXnuC-0L-UEP-ramL8ImX2dLOH6o7cH30NhNq9MTY2_hgit6oGNCuOMm23AxWsw-6lfTwN7m7QaGt4TTTrFdJWUSsB5SXWyT581YWKiywyzed9R7pjl-thTq4qgxnkdLKOYvFwH-bf8HwM3vVskCpJuSNK6eBp7tm7c9kDkAFORoce3Vedc4GAYKMZG9NLNaFCsLrXexiqg0qDG2EixRTs0QE5LzfKsJbcTUj4GcL7NWIkQTHYfjU58XcRWaDQbrt_UlhCno8"/>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html> 

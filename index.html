@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Luxury Villa Rentals in St. Lucia | Bryan's Villas</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-teal-500 {
+            color: #14b8a6;
+        }
+        .bg-teal-500 {
+            background-color: #14b8a6;
+        }
+        .border-teal-500 {
+            border-color: #14b8a6;
+        }
+        .hover\:bg-teal-600:hover {
+            background-color: #0d9488;
+        }
+        .hover\:bg-teal-50:hover {
+            background-color: #f0fdfa;
+        }
+        .focus\:ring-teal-500:focus {
+            --tw-ring-color: #14b8a6;
+        }
+        .focus\:border-teal-500:focus {
+            border-color: #14b8a6;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+<header class="bg-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="text-2xl font-bold text-gray-700">Bryan's Villas</div>
+<nav class="hidden md:flex space-x-6 text-gray-600">
+<a class="hover:text-teal-500 transition-colors duration-200" href="pages/villas.html">Villas</a>
+<a class="hover:text-teal-500 transition-colors duration-200" href="pages/experiences.html">Experiences</a>
+<a class="hover:text-teal-500 transition-colors duration-200" href="pages/journal.html">Journal</a>
+<a class="hover:text-teal-500 transition-colors duration-200" href="pages/about.html">About Us</a>
+<a class="hover:text-teal-500 transition-colors duration-200" href="pages/contact.html">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="text-gray-600 hover:text-teal-500 transition-colors duration-200">
+<span class="material-icons">search</span>
+</button>
+<button class="text-gray-600 hover:text-teal-500 transition-colors duration-200">
+<span class="material-icons">favorite_border</span>
+</button>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm transition-colors duration-200">My Enquiry</button>
+<button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-teal-500 transition-colors duration-200">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 transform -translate-y-full opacity-0 transition-all duration-300 ease-in-out absolute w-full z-50">
+<nav class="px-4 py-6 space-y-4">
+<a href="pages/villas.html" class="block text-gray-600 hover:text-teal-500 transition-colors duration-200 py-2">Villas</a>
+<a href="pages/experiences.html" class="block text-gray-600 hover:text-teal-500 transition-colors duration-200 py-2">Experiences</a>
+<a href="pages/journal.html" class="block text-gray-600 hover:text-teal-500 transition-colors duration-200 py-2">Journal</a>
+<a href="pages/about.html" class="block text-gray-600 hover:text-teal-500 transition-colors duration-200 py-2">About Us</a>
+<a href="pages/contact.html" class="block text-gray-600 hover:text-teal-500 transition-colors duration-200 py-2">Contact</a>
+<div class="pt-4 border-t border-gray-200">
+<button class="w-full bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm transition-colors duration-200">My Enquiry</button>
+</div>
+</nav>
+</div>
+</header>
+
+<main>
+<!-- Hero Section -->
+<section class="hero-bg h-screen flex items-center justify-center text-white text-center">
+<div class="max-w-4xl mx-auto px-4">
+<h1 class="font-playfair text-6xl font-bold mb-4">Luxury Villas in St. Lucia</h1>
+<p class="text-xl mb-8">Discover our exclusive collection of three exceptional villas in the heart of the Caribbean paradise</p>
+<div class="flex justify-center space-x-4">
+<button class="bg-teal-500 text-white px-8 py-3 rounded-md hover:bg-teal-600 font-semibold text-lg transition-colors duration-200">View Our Villas</button>
+<button id="plan-your-stay-btn" class="border-2 border-white text-white px-8 py-3 rounded-md hover:bg-white hover:text-gray-800 font-semibold text-lg transition-colors duration-200">Plan Your Stay</button>
+</div>
+</div>
+</section>
+
+<!-- Our Villas Section -->
+<section class="container mx-auto px-4 py-16">
+<div class="text-center mb-12">
+<h2 class="font-playfair text-4xl font-bold text-gray-700 mb-4">Our Exclusive Villa Collection</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Each villa in our St. Lucia collection offers a unique blend of luxury, privacy, and breathtaking Caribbean views. From intimate retreats to grand estates, find your perfect island sanctuary.</p>
+</div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Smugglers Nest -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Smugglers Nest aerial view" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8KT3LsGZ5xLHRkE15dmG489Yx-PSwekEo1xWG5Kv-Tl5_gQwB0zF6D3XM-5QxiM2A6zH9AFK4Ndbgi6gJA80V3NTDxdtW-Ixx_ocHLC27pwIyoK82AguT5AIzZ1n1pGbsVhWox5Ntp_NXlZEyji8mQZKooQz_NzcE682hcNm3DZ_F7-q3HNJINt6tGGOudaMfukLqrXm4_53w208V3hyq4cDvKAIVT-3kNJTPQTYRpcQjgeolb-LQW3ofLkEiBe99gMa3IJHWuAo"/>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-2">Smugglers Nest</h3>
+<p class="text-gray-600 mb-4">Prime location on Soufriere Bay with magnificent Piton views. This luxury villa features private beach access and full staff including a cook.</p>
+<div class="flex items-center text-sm text-gray-600 mb-4">
+<span class="material-icons text-sm mr-1">group</span> 8 
+<span class="material-icons text-sm ml-4 mr-1">king_bed</span> 4 
+<span class="material-icons text-sm ml-4 mr-1">bathtub</span> 4
+</div>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold text-gray-700">From £1,250 / night</span>
+<a href="index2.html" class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm">View Villa</a>
+</div>
+</div>
+</div>
+
+<!-- Piton Paradise -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Piton Paradise exterior" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBedESYRZZ0jrBlGtpqcZajFcAlY6yTy4abd14ZVj3GkKFdiSB-Kqqk3RuZd0ox46cAy0OnRcU-p_s3L8znvwfEQ9fX7zkw1pcbOnQFrDf0md2lCwY5o-ntjRCvd-bl1shI59ujslKcosIvKK8RF3QhLgnvLgtlDxsurhqVdETwic3QLYTcm_nWHUJZDVwl595Q7mcxZKm9pn94YwasJs6Fr2WzSpCf-UR4JwDDlU3IWiM5ekYnfUX--VQ_JtjVO-2NSRRTpfDpT2Y"/>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-2">Piton Paradise</h3>
+<p class="text-gray-600 mb-4">Spectacular hilltop retreat with panoramic views of both Pitons. Features infinity pool, spa pavilion, and tropical gardens.</p>
+<div class="flex items-center text-sm text-gray-600 mb-4">
+<span class="material-icons text-sm mr-1">group</span> 6 
+<span class="material-icons text-sm ml-4 mr-1">king_bed</span> 3 
+<span class="material-icons text-sm ml-4 mr-1">bathtub</span> 3
+</div>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold text-gray-700">From £980 / night</span>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm">View Villa</button>
+</div>
+</div>
+</div>
+
+<!-- Sunset Sanctuary -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<img alt="Sunset Sanctuary pool area" class="w-full h-64 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN8zU0Lm_2zbbp4AAWuzyRlNrfOsLW_1hB_D8e7RrzvahqmYIEj7yCE3FWN6dFsxza6SXAKXGbYWi-oskVAp6Jv4RpuC1Jr2pKDLNg-Rd7cyE8PMsr5gGeP1_fdFBjMwVKt3Kf4IB-t6MgtJB98AjT1An_NkJJE9780AiRQmfBu12fj80Nz0kuGl4gpmzkrjNB_cDYiELAyz1IzDPvRjnfGEnfFMBQaz77FXfrqHSYQ2UNi1vtIUfQbei91O-kJdYhg0jYIVCDvo4"/>
+<div class="p-6">
+<h3 class="font-playfair text-2xl font-bold text-gray-700 mb-2">Sunset Sanctuary</h3>
+<p class="text-gray-600 mb-4">Intimate beachfront villa perfect for romantic getaways. Features private beach, outdoor dining pavilion, and stunning sunset views.</p>
+<div class="flex items-center text-sm text-gray-600 mb-4">
+<span class="material-icons text-sm mr-1">group</span> 4 
+<span class="material-icons text-sm ml-4 mr-1">king_bed</span> 2 
+<span class="material-icons text-sm ml-4 mr-1">bathtub</span> 2
+</div>
+<div class="flex justify-between items-center">
+<span class="text-lg font-bold text-gray-700">From £750 / night</span>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm">View Villa</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Why St. Lucia Section -->
+<section class="bg-white py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="font-playfair text-4xl font-bold text-gray-700 mb-4">Why Choose St. Lucia</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">From the iconic Pitons to pristine beaches and lush rainforests, St. Lucia offers an unparalleled Caribbean experience.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-icons text-teal-500 text-2xl">landscape</span>
+</div>
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Iconic Pitons</h3>
+<p class="text-gray-600 text-sm">UNESCO World Heritage volcanic peaks rising dramatically from the sea</p>
+</div>
+<div class="text-center">
+<div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-icons text-teal-500 text-2xl">beach_access</span>
+</div>
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Pristine Beaches</h3>
+<p class="text-gray-600 text-sm">Golden sand and dramatic black sand beaches with crystal-clear waters</p>
+</div>
+<div class="text-center">
+<div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-icons text-teal-500 text-2xl">spa</span>
+</div>
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Luxury & Wellness</h3>
+<p class="text-gray-600 text-sm">World-class spas, fine dining, and premium hospitality</p>
+</div>
+<div class="text-center">
+<div class="bg-teal-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+<span class="material-icons text-teal-500 text-2xl">explore</span>
+</div>
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Adventure</h3>
+<p class="text-gray-600 text-sm">Rainforest hikes, volcano tours, diving, and water sports</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Attractions Section -->
+<section class="container mx-auto px-4 py-16">
+<div class="text-center mb-12">
+<h2 class="font-playfair text-4xl font-bold text-gray-700 mb-4">Nearby Attractions & Experiences</h2>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover the natural wonders and cultural treasures that make St. Lucia an unforgettable destination.</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img alt="Sulphur Springs" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkcYskgLLRX-fJvpvRU0KJ_nOe2WJQPEGWMEN8K20aFXVtQOCP4hnkDIuskIJZyVEMA-8-SeW9iS71ZLGkXiS7yCgwq5ZM6nsTCEf6Ottf7eEIlCDr898Z225jeN6wbu-uhZgfWa3wK7EMeccm-rOTzaAvGc9bkrlYhkXr1zbnG8ugiSheXRGVAgjY4mwvMZKTFc6sitP4YGhfOn8PuCWW-B6uwHeOVZ2FkSn908rz0tG_s0DeEmUJgj7l4NXa3ndkw0sivNqTkWM"/>
+<div class="p-6">
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Sulphur Springs</h3>
+<p class="text-sm text-gray-600 mb-3">Drive-in volcano with therapeutic hot springs and mud baths</p>
+<span class="text-sm text-teal-500">10 minutes from villas</span>
+</div>
+</div>
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img alt="Diamond Falls" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB-m-Ay2CQ3ju3dmsPfddMRx4ZMG7wgBTrgrlRkX9CY4fQ-dG2jM28m4Au1waZe0K7BdoU9a8v1AzRzIQluFFyj2UoD1p54UVdNGISgvCI7XhKGKRPFZL0cscl4-g0vMQnxdVi_NeifqzdySf4uFsp-DQtWzwCv_z9lAYvLqE3b2RJ3MVq2e1bi75z7vzSivEF2FXAVigOMczZ0KMyPkTFnP86PsiRnAx5PKsoVszKj_K9U0ubpZpX6pltTQzSGFznaD9dk7eneo4"/>
+<div class="p-6">
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Diamond Falls</h3>
+<p class="text-sm text-gray-600 mb-3">Colorful waterfall in botanical gardens with mineral-rich pools</p>
+<span class="text-sm text-teal-500">15 minutes from villas</span>
+</div>
+</div>
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img alt="Tet Paul Nature Trail" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmi09DFttSmW2DrX6Lqhy14lZ0iOd8M91N_3hdaEWBST1PtledP5bBwHzgQ-QglPsNSqUQ7EniaSalFfQALLVp5jaih-OQUUUcmsxF6sMDUK4kwWqizlklWRaGpTTjSfMPhi4Htwq72zWO2pgkhLvJsI0TvTqhlVABEgamOULiqrUyRgL_dec5zyQXEzsiw_vJjr7JTq3Hst6ioP2Sa2kpFvqx4GpUyXDacqlUg0_CLTq_EH26JO7MWj_RSQ9e_zxlnkb0OJNI_uA"/>
+<div class="p-6">
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Tet Paul Nature Trail</h3>
+<p class="text-sm text-gray-600 mb-3">Easy hiking trail with spectacular Piton views and local flora</p>
+<span class="text-sm text-teal-500">20 minutes from villas</span>
+</div>
+</div>
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img alt="Anse Chastanet Beach" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs9YJLGNFu_sxmoIrCWL4OtcslGf8W2i03iAaEEYd_9VwMsmiHcDXc0COxRHIRrX467_xLiVBmR2Y4aLktjsKWV_HFDOgTmuNBL4x9S3siDkiey12krXivbm6Ommh_SPnF0r0yxrWyi4hLZzlsf1enLLPNkqSSmgPH8-QcmTsePKwS3LyWK69ZLiPVRxgWG-YibKIvgD-GYr0oCXxozvpTZasEa5g5m2Nh1Lh2ly90OtYISXbQ4knL7qOK6INM98o8oNot-qSJ1C8"/>
+<div class="p-6">
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Anse Chastanet Beach</h3>
+<p class="text-sm text-gray-600 mb-3">Pristine black sand beach perfect for snorkeling and diving</p>
+<span class="text-sm text-teal-500">5 minutes from villas</span>
+</div>
+</div>
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img alt="Gros Piton Hike" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN6jEOG54vkw-UzqkDtkvahJC-uXS0DEzCRpf64c2ljb89LjALyS1hiavO3cxxSspP-LSQj_P3h8hpRXa5VXISwkinDe5MO5aMYN2MKxNAbK5HmFG3ukGghbmd6tpL3mybX-V-JRmAktc-hjqbLmlziqLiM4vrw1-xlquRu7nts-o35F3cO9AhMaLk5jemoiv-b33mj5006YYB7jpsEsHwIO2un3Hx4lTBnFf9DTO7NPmBh3lLyH1ShSvcgjb0-d8Rd0OCPJfvTUs"/>
+<div class="p-6">
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Gros Piton Hike</h3>
+<p class="text-sm text-gray-600 mb-3">Challenging climb with breathtaking panoramic island views</p>
+<span class="text-sm text-teal-500">25 minutes from villas</span>
+</div>
+</div>
+
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<img alt="Soufriere Town" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIsJe0k_4OidrUa09pdgrFuBl5Fac0NciIERwWqjCFm5Nn49FZxXWNSkzXtBtb97-dnGm6tWPy7w0VWVpwJ0HQwthIyQ6UtgfevFo2MLY3uZQJvVkaARpMB0O07Nr_Kd7vTLbjLwGKPiA7uOVSND_cZu9XkBpdcZCm_NkX4XmI9ZuNfQHpRmrgsPkmRH8QFRQPVB6jBr_flju8Gv2t0zrHypDKsjualTTdx-b86M8dRURM1BwDBoc3-J4R3qwkaTMYS736uHZm60w"/>
+<div class="p-6">
+<h3 class="font-semibold text-lg text-gray-700 mb-2">Soufriere Town</h3>
+<p class="text-sm text-gray-600 mb-3">Historic fishing village with local markets and authentic culture</p>
+<span class="text-sm text-teal-500">5 minutes from villas</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-gray-200 py-16">
+<div class="container mx-auto px-4 text-center">
+<h2 class="font-playfair text-3xl font-bold text-gray-700 mb-4">Ready to Experience St. Lucia?</h2>
+<p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Let our travel experts help you choose the perfect villa and create an unforgettable Caribbean getaway.</p>
+<div class="flex justify-center items-center text-yellow-400 mb-6">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="ml-2 text-gray-600 text-sm">Rated 4.9/5 from 1,200+ Feefo reviews</span>
+</div>
+<div class="text-4xl font-bold text-teal-500 mb-6">0333 000 0000</div>
+<div class="flex justify-center space-x-4">
+<button class="bg-teal-500 text-white px-8 py-3 rounded-md hover:bg-teal-600 font-semibold text-lg">Enquire Now</button>
+<button class="border border-teal-500 text-teal-500 px-8 py-3 rounded-md hover:bg-teal-50 font-semibold text-lg">Request Callback</button>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-gray-800 text-gray-300 py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-8">
+<div>
+<h5 class="font-bold text-white mb-3">Company</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="#">About Us</a></li>
+<li><a class="hover:text-teal-400" href="#">Our Villas</a></li>
+<li><a class="hover:text-teal-400" href="#">Journal</a></li>
+<li><a class="hover:text-teal-400" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Help</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="#">Contact Us</a></li>
+<li><a class="hover:text-teal-400" href="#">FAQs</a></li>
+<li><a class="hover:text-teal-400" href="#">Booking T&Cs</a></li>
+<li><a class="hover:text-teal-400" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Destinations</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="#">Caribbean</a></li>
+<li><a class="hover:text-teal-400" href="#">Europe</a></li>
+<li><a class="hover:text-teal-400" href="#">Asia</a></li>
+<li><a class="hover:text-teal-400" href="#">UK & Ireland</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-white mb-3">Connect</h5>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-teal-400" href="#">Facebook</a></li>
+<li><a class="hover:text-teal-400" href="#">Instagram</a></li>
+<li><a class="hover:text-teal-400" href="#">Twitter</a></li>
+<li><a class="hover:text-teal-400" href="#">Pinterest</a></li>
+</ul>
+</div>
+<div class="col-span-2 lg:col-span-1">
+<h5 class="font-bold text-white mb-3">Newsletter</h5>
+<p class="text-sm mb-2">Sign up for travel inspiration and exclusive offers.</p>
+<form class="flex">
+<input class="bg-gray-700 text-white px-3 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-teal-500 flex-grow text-sm" placeholder="Your email" type="email"/>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-r-md hover:bg-teal-600 text-sm" type="submit">Sign Up</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+<p>© 2023 Bryan's Villas. All rights reserved.</p>
+<div class="flex space-x-4 mt-4 md:mt-0">
+<img alt="ABTA logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAlCU0jqL5mVTDtQqcL8NaMIGbMZZiBwIRD-xZKHsZzYJ_AcnFiZ4Mmt_rBkW40qjq69DHpIpeObVDIQVYCMWo-U6rbydp5pykvQTUEdRAcJ6NCCKRXK7gE9Rz1iSGSyzPXtNj_v5hYJcD5uATgZUYx9U2zYIsBJwtzsKE_9XwXlqiGR0asDyDiXUx9wmZ9XuIJphhOl6aMT5TejEHEPglpsahjf-VoG7lOMV6FeV__7xfFdxw7RGbhnS3gO7GZB1WVasPV5VYaAM"/>
+<img alt="ATOL Protected logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJSkbq3SyLw7Fe6HVE8B0wdwBNq8RY3enytLJN1SKyxVCtKvVEy5sD6_Ei_ZmjNUQtKdfQ6KLrIxTIACsNcarSaaFQSGZBNF5-YRFSeTouiQfJWXm-zrlVJVoPE5bQZmM6HZ7KJaJ3J82BefwT_7P4M2e3YD9CoJlQkJYqEMlkBfgHLRaS3lCgsAQ9u1aUHIyOTmwancBc12vGgZ07fsELl0SXrf_Cw37t9zixJDramx4heYa3qyRM41Vr5Zmep-znxkoi-taEJks"/>
+<img alt="Feefo logo" class="h-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBENBCybeBXnuC-0L-UEP-ramL8ImX2dLOH6o7cH30NhNq9MTY2_hgit6oGNCuOMm23AxWsw-6lfTwN7m7QaGt4TTTrFdJWUSsB5SX581YWKiywyzed9R7pjl-thTq4qgxnkdLKOYvFwH-bf8HwM3vVskCpJuSNK6eBp7tm7c9kDkAFORoce3Vedc4GYKMZG9NLNaFCsLrXexiqg0qDG2EixRTs0QE5LzfKsJbcTUj4GcL7NWIkQTHYfjU58XcRWaDQbrt_UlhCno8"/>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile menu toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
+
+    mobileMenuButton.addEventListener('click', function() {
+        if (!isMenuOpen) {
+            // Open menu
+            mobileMenu.classList.remove('-translate-y-full', 'opacity-0');
+            mobileMenu.classList.add('translate-y-0', 'opacity-100');
+            mobileMenuButton.querySelector('.material-icons').textContent = 'close';
+            isMenuOpen = true;
+        } else {
+            // Close menu
+            mobileMenu.classList.remove('translate-y-0', 'opacity-100');
+            mobileMenu.classList.add('-translate-y-full', 'opacity-0');
+            mobileMenuButton.querySelector('.material-icons').textContent = 'menu';
+            isMenuOpen = false;
+        }
+    });
+
+    // Close menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-y-0', 'opacity-100');
+            mobileMenu.classList.add('-translate-y-full', 'opacity-0');
+            mobileMenuButton.querySelector('.material-icons').textContent = 'menu';
+            isMenuOpen = false;
+        });
+    });
+
+    // Cal.com booking integration
+    const planYourStayBtn = document.getElementById('plan-your-stay-btn');
+    if (planYourStayBtn) {
+        planYourStayBtn.addEventListener('click', function() {
+            // Replace 'your-cal-username' with your actual Cal.com username
+            // Replace 'consultation' with your actual event type
+            window.open('https://cal.com/your-cal-username/consultation', '_blank');
+        });
+    }
+});
+</script>
+
+</body></html>
