@@ -1,0 +1,179 @@
+<html lang="en-US"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences | Bryan's Villas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        .experiences-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .experience-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .experience-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+        }
+        .experience-card-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+        }
+        .experience-card-content {
+            padding: 25px;
+        }
+        .experience-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .experience-card p {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        .experience-card .btn {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 10px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo"><img src="../images/logo-1.png" alt="Bryan's Villas Logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="villas.html">Villas</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Unforgettable St. Lucia Experiences</h1>
+                <p style="font-size: 1.1rem; max-width: 700px; margin: 10px auto 0; color: #777;">From volcanic adventures to pristine coral reefs, discover the magic of St. Lucia.</p>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <div class="container">
+                <div class="experiences-grid">
+                    <div class="experience-card">
+                        <div class="experience-card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBN6jEOG54vkw-UzqkDtkvahJC-uXS0DEzCRpf64c2ljb89LjALyS1hiavO3cxxSspP-LSQj_P3h8hpRXa5VXISwkinDe5MO5aMYN2MKxNAbK5HmFG3ukGghbmd6tpL3mybX-V-JRmAktc-hjqbLmlziqLiM4vrw1-xlquRu7nts-o35F3cO9AhMaLk5jemoiv-b33mj5006YYB7jpsEsHwIO2un3Hx4lTBnFf9DTO7NPmBh3lLyH1ShSvcgjb0-d8Rd0OCPJfvTUs');"></div>
+                        <div class="experience-card-content">
+                            <h3>Gros Piton Sunrise Hike</h3>
+                            <p>Experience the magical sunrise from the summit of Gros Piton, offering breathtaking 360-degree views of the island.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkcYskgLLRX-fJvpvRU0KJ_nOe2WJQPEGWMEN8K20aFXVtQOCP4hnkDIuskIJZyVEMA-8-SeW9iS71ZLGkXiS7yCgwq5ZM6nsTCEf6Ottf7eEIlCDr898Z225jeN6wbu-uhZgfWa3wK7EMeccm-rOTzaAvGc9bkrlYhkXr1zbnG8ugiSheXRGVAgjY4mwvMZKTFc6sitP4YGhfOn8PuCWW-B6uwHeOVZ2FkSn908rz0tG_s0DeEmUJgj7l4NXa3ndkw0sivNqTkWM');"></div>
+                        <div class="experience-card-content">
+                            <h3>Volcano &amp; Waterfall Adventure</h3>
+                            <p>Explore the world's only drive-in volcano and discover the colorful Diamond Falls botanical gardens.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAs9YJLGNFu_sxmoIrCWL4OtcslGf8W2i03iAaEEYd_9VwMsmiHcDXc0COxRHIRrX467_xLiVBmR2Y4aLktjsKWV_HFDOgTmuNBL4x9S3siDkiey12krXivbm6Ommh_SPnF0r0yxrWyi4hLZzlsf1enLLPNkqSSmgPH8-QcmTsePKwS3LyWK69ZLiPVRxgWG-YibKIvgD-GYr0oCXxozvpTZasEa5g5m2Nh1Lh2ly90OtYISXbQ4knL7qOK6INM98o8oNot-qSJ1C8');"></div>
+                        <div class="experience-card-content">
+                            <h3>Sunset Catamaran Cruise</h3>
+                            <p>Sail along the stunning coastline with snorkeling, drinks, and a spectacular Caribbean sunset.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBB-m-Ay2CQ3ju3dmsPfddMRx4ZMG7wgBTrgrlRkX9CY4fQ-dG2jM28m4Au1waZe0K7BdoU9a8v1AzRzIQluFFyj2UoD1p54UVdNGISgvCI7XhKGKRPFZL0cscl4-g0vMQnxdVi_NeifqzdySf4uFsp-DQtWzwCv_z9lAYvLqE3b2RJ3MVq2e1bi75z7vzSivEF2FXAVigOMczZ0KMyPkTFnP86PsiRnAx5PKsoVszKj_K9U0ubpZpX6pltTQzSGFznaD9dk7eneo4');"></div>
+                        <div class="experience-card-content">
+                            <h3>Caribbean Cooking Class</h3>
+                            <p>Learn to prepare authentic St. Lucian dishes with local ingredients and traditional techniques.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmi09DFttSmW2DrX6Lqhy14lZ0iOd8M91N_3hdaEWBST1PtledP5bBwHzgQ-QglPsNSqUQ7EniaSalFfQALLVp5jaih-OQUUUcmsxF6sMDUK4kwWqizlklWRaGpTTjSfMPhi4Htwq72zWO2pgkhLvJsI0TvTqhlVABEgamOULiqrUyRgL_dec5zyQXEzsiw_vJjr7JTq3Hst6ioP2Sa2kpFvqx4GpUyXDacqlUg0_CLTq_EH26JO7MWj_RSQ9e_zxlnkb0OJNI_uA');"></div>
+                        <div class="experience-card-content">
+                            <h3>Rainforest Canopy Adventure</h3>
+                            <p>Soar through the treetops on 12 zip lines with spectacular views of the island and ocean.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIsJe0k_4OidrUa09pdgrFuBl5Fac0NciIERwWqjCFm5Nn49FZxXWNSkzXtBtb97-dnGm6tWPy7w0VWVpwJ0HQwthIyQ6UtgfevFo2MLY3uZQJvVkaARpMB0O07Nr_Kd7vTLbjLwGKPiA7uOVSND_cZu9XkBpdcZCm_NkX4XmI9ZuNfQHpRmrgsPkmRH8QFRQPVB6jBr_flju8Gv2t0zrHypDKsjualTTdx-b86M8dRURM1BwDBoc3-J4R3qwkaTMYS736uHZm60w');"></div>
+                        <div class="experience-card-content">
+                            <h3>Coral Reef Diving</h3>
+                            <p>Explore vibrant coral reefs and tropical marine life at some of the Caribbean's best dive sites.</p>
+                            <a href="#" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="villas.html">Our Villas</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#">Caribbean</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Sign up for travel inspiration and exclusive offers.</p>
+                    <form style="display: flex;">
+                        <input type="email" placeholder="Your email" style="width: 100%; padding: 10px; border-radius: 4px 0 0 4px; border: 1px solid #555; background: #444; color: white;">
+                        <button type="submit" style="padding: 10px; border: none; background: var(--secondary-color); color: white; border-radius: 0 4px 4px 0; cursor: pointer;">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.49-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.72-1.89-8.83-4.47-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.58-.7-.02-1.37-.21-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.5 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path></svg></a>
+                </div>
+                <p class="copyright">© 2025 Piton View Estates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+ </body></html>

@@ -1,0 +1,187 @@
+<html lang="en-US"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article | Bryan's Villas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        .article-header {
+            text-align: center;
+            padding: 60px 0;
+            background-color: var(--light-gray);
+        }
+        .article-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .article-meta {
+            color: #777;
+            font-weight: 600;
+        }
+        .article-content {
+            max-width: 800px;
+            margin: 60px auto;
+            line-height: 1.8;
+        }
+        .article-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+        .related-articles {
+            padding: 60px 0;
+            background-color: var(--light-gray);
+        }
+        .related-articles h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .article-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+        }
+        .article-card-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+        }
+        .article-card-content {
+            padding: 25px;
+        }
+        .article-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .article-card p {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        .article-card .read-more {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo"><img src="../images/logo-1.png" alt="Bryan's Villas Logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="villas.html">Villas</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="article-header">
+            <div class="container">
+                <h1>The Ultimate Guide to St. Lucia's Hidden Gems</h1>
+                <div class="article-meta">Published on December 15, 2023 by Sarah Mitchell</div>
+            </div>
+        </div>
+
+        <div class="article-content">
+            <div class="container">
+                <p>Discover the secret spots and local favorites that make St. Lucia truly magical. From secluded beaches to authentic rum distilleries, uncover the island's best-kept secrets with our insider guide. We'll take you off the beaten path to find the most beautiful waterfalls, the most delicious local food, and the most stunning viewpoints.</p>
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkcYskgLLRX-fJvpvRU0KJ_nOe2WJQPEGWMEN8K20aFXVtQOCP4hnkDIuskIJZyVEMA-8-SeW9iS71ZLGkXiS7yCgwq5ZM6nsTCEf6Ottf7eEIlCDr898Z225jeN6wbu-uhZgfWa3wK7EMeccm-rOTzaAvGc9bkrlYhkXr1zbnG8ugiSheXRGVAgjY4mwvMZKTFc6sitP4YGhfOn8PuCWW-B6uwHeOVZ2FkSn908rz0tG_s0DeEmUJgj7l4NXa3ndkw0sivNqTkWM" alt="St. Lucia Pitons sunset">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <section class="related-articles">
+            <div class="container">
+                <h2>Related Articles</h2>
+                <div class="journal-grid">
+                    <article class="article-card">
+                        <div class="article-card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8KT3LsGZ5xLHRkE15dmG489Yx-PSwekEo1xWG5Kv-Tl5_gQwB0zF6D3XM-5QxiM2A6zH9AFK4Ndbgi6gJA80V3NTDxdtW-Ixx_ocHLC27pwIyoK82AguT5AIzZ1n1pGbsVhWox5Ntp_NXlZEyji8mQZKooQz_NzcE682hcNm3DZ_F7-q3HNJINt6tGGOudaMfukLqrXm4_53w208V3hyq4cDvKAIVT-3kNJTPQTYRpcQjgeolb-LQW3ofLkEiBe99gMa3IJHWuAo');"></div>
+                        <div class="article-card-content">
+                            <h3>Smugglers Nest: A Slice of Paradise</h3>
+                            <p>Step inside one of St. Lucia's most coveted villas, where luxury meets authentic Caribbean charm and breathtaking views.</p>
+                            <a href="article.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    <article class="article-card">
+                        <div class="article-card-image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBB-m-Ay2CQ3ju3dmsPfddMRx4ZMG7wgBTrgrlRkX9CY4fQ-dG2jM28m4Au1waZe0K7BdoU9a8v1AzRzIQluFFyj2UoD1p54UVdNGISgvCI7XhKGKRPFZL0cscl4-g0vMQnxdVi_NeifqzdySf4uFsp-DQtWzwCv_z9lAYvLqE3b2RJ3MVq2e1bi75z7vzSivEF2FXAVigOMczZ0KMyPkTFnP86PsiRnAx5PKsoVszKj_K9U0ubpZpX6pltTQzSGFznaD9dk7eneo4');"></div>
+                        <div class="article-card-content">
+                            <h3>A Culinary Journey Through St. Lucia</h3>
+                            <p>From street food to fine dining, explore the vibrant flavors that make St. Lucian cuisine an unforgettable experience.</p>
+                            <a href="article.html" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="villas.html">Our Villas</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#">Caribbean</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Sign up for travel inspiration and exclusive offers.</p>
+                    <form style="display: flex;">
+                        <input type="email" placeholder="Your email" style="width: 100%; padding: 10px; border-radius: 4px 0 0 4px; border: 1px solid #555; background: #444; color: white;">
+                        <button type="submit" style="padding: 10px; border: none; background: var(--secondary-color); color: white; border-radius: 0 4px 4px 0; cursor: pointer;">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.49-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.72-1.89-8.83-4.47-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.58-.7-.02-1.37-.21-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.5 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path></svg></a>
+                </div>
+                <p class="copyright">© 2025 Piton View Estates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+ </body></html>

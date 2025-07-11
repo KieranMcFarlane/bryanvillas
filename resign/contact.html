@@ -1,0 +1,174 @@
+<html lang="en-US"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Bryan's Villas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-main);
+        }
+        .form-group button {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .contact-details {
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo"><img src="../images/logo-1.png" alt="Bryan's Villas Logo"></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="villas.html">Villas</a></li>
+                    <li><a href="experiences.html">Experiences</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p style="font-size: 1.1rem; max-width: 700px; margin: 10px auto 0; color: #777;">We're here to help you plan your perfect getaway. Reach out to us anytime.</p>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <div class="container">
+                <div class="contact-grid">
+                    <div>
+                        <h2>Send an Enquiry</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6" required=""></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Our Office</h3>
+                        <p>
+                            <strong>Bryan's Villas Head Office</strong><br>
+                            123 Travel Street<br>
+                            London, SW1A 1AA<br>
+                            United Kingdom
+                        </p>
+                        <p>
+                            <strong>Email:</strong> hello@bryansvillas.com<br>
+                            <strong>Phone:</strong> 0333 000 0000
+                        </p>
+                        <h4>Office Hours</h4>
+                        <p>
+                            Monday - Friday: 9am - 6pm<br>
+                            Saturday - Sunday: 10am - 4pm
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="villas.html">Our Villas</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#">Caribbean</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Sign up for travel inspiration and exclusive offers.</p>
+                    <form style="display: flex;">
+                        <input type="email" placeholder="Your email" style="width: 100%; padding: 10px; border-radius: 4px 0 0 4px; border: 1px solid #555; background: #444; color: white;">
+                        <button type="submit" style="padding: 10px; border: none; background: var(--secondary-color); color: white; border-radius: 0 4px 4px 0; cursor: pointer;">Go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.49-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.72-1.89-8.83-4.47-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.58-.7-.02-1.37-.21-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.52 8.52 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.5 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"></path></svg></a>
+                </div>
+                <p class="copyright">© 2025 Piton View Estates. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+ </body></html>
