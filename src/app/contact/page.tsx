@@ -86,7 +86,7 @@ export default function Contact() {
                 <h3>Our Office</h3>
                 <div className="office-info">
                   <p>
-                    <strong>Bryan's Villas Head Office</strong><br/>
+                    <strong>Bryan&apos;s Villas Head Office</strong><br/>
                     123 Travel Street<br/>
                     London, SW1A 1AA<br/>
                     United Kingdom

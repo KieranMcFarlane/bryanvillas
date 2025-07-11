@@ -297,7 +297,7 @@ export default async function ExperiencePage({ params }: ExperiencePageProps) {
 
                 {/* What's Included */}
                 <div className="experience-includes">
-                  <h3>What's Included</h3>
+                  <h3>What&apos;s Included</h3>
                   <ul>
                     {experience.includes.map((item, index) => (
                       <li key={index}>{item}</li>

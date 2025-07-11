@@ -78,7 +78,7 @@ export default function Villa() {
             style={{ backgroundImage: 'url(/images/property-3/1-stay-header-1600x698-1.jpg)' }}
           >
             <div className="hero-content">
-              <h1>Smuggler's Nest</h1>
+              <h1>Smuggler&apos;s Nest</h1>
               <p>A private sanctuary with direct beach access and magnificent Piton views.</p>
             </div>
             <button className="btn-gallery">View Gallery</button>
@@ -128,9 +128,9 @@ export default function Villa() {
           <div className="villa-content-grid">
             <div className="villa-main-content">
               <section className="description-section">
-                <h3>About Smuggler's Nest</h3>
-                <p>Nestled directly on the shores of Soufriere Bay, Smuggler's Nest offers an unparalleled Caribbean experience with direct access to a secluded beach and awe-inspiring views of the majestic Pitons. This expansive luxury villa is designed for those who appreciate both natural beauty and refined comfort.</p>
-                <p>The villa's architecture seamlessly blends indoor and outdoor living, with vast terraces, an open-plan living area, and a stunning infinity pool that appears to merge with the sea beyond. A full staff, including a talented private cook, is dedicated to ensuring your every need is met, allowing you to fully immerse yourself in the tranquility of your surroundings. Whether you're hosting a family gathering or seeking a lavish escape, Smuggler's Nest is your ultimate private paradise.</p>
+                <h3>About Smuggler&apos;s Nest</h3>
+                <p>Nestled directly on the shores of Soufriere Bay, Smuggler&apos;s Nest offers an unparalleled Caribbean experience with direct access to a secluded beach and awe-inspiring views of the majestic Pitons. This expansive luxury villa is designed for those who appreciate both natural beauty and refined comfort.</p>
+                <p>The villa&apos;s architecture seamlessly blends indoor and outdoor living, with vast terraces, an open-plan living area, and a stunning infinity pool that appears to merge with the sea beyond. A full staff, including a talented private cook, is dedicated to ensuring your every need is met, allowing you to fully immerse yourself in the tranquility of your surroundings. Whether you&apos;re hosting a family gathering or seeking a lavish escape, Smuggler&apos;s Nest is your ultimate private paradise.</p>
               </section>
               
               <section className="amenities-section">

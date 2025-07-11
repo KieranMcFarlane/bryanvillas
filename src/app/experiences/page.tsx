@@ -107,7 +107,7 @@ export default function Experiences() {
               <div className="container">
                 <div className="experiences-hero-content">
                   <h1>Unforgettable St. Lucia Experiences</h1>
-                  <p>From volcanic adventures to pristine coral reefs, discover the magic of St. Lucia through carefully curated experiences that showcase the island's natural beauty and rich culture.</p>
+                  <p>From volcanic adventures to pristine coral reefs, discover the magic of St. Lucia through carefully curated experiences that showcase the island&apos;s natural beauty and rich culture.</p>
                 </div>
               </div>
             </div>

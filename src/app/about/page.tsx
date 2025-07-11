@@ -87,7 +87,7 @@ export default function About() {
               <div className="container">
                 <div className="experiences-hero-content">
                   <h1>About Bryan's Villas</h1>
-                  <p>Curating exceptional villa experiences since 1996. We've grown from a small family business to one of the world's leading luxury villa specialists, always maintaining our commitment to personal service and authentic experiences.</p>
+                  <p>Curating exceptional villa experiences since 1996. We&apos;ve grown from a small family business to one of the world&apos;s leading luxury villa specialists, always maintaining our commitment to personal service and authentic experiences.</p>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function About() {
           <div className="container">
             <div className="section-header">
               <h2>Our Story</h2>
-              <p>Founded in 1996 by Bryan, Bryan's Villas began as a passion project to share the world's most extraordinary villas with discerning travelers. What started as a small collection of handpicked properties has grown into one of the world's leading luxury villa specialists.</p>
+              <p>Founded in 1996 by Bryan, Bryan&apos;s Villas began as a passion project to share the world&apos;s most extraordinary villas with discerning travelers. What started as a small collection of handpicked properties has grown into one of the world&apos;s leading luxury villa specialists.</p>
               <p>Today, we curate over 8,000 exceptional villas across 80 destinations worldwide, each one personally selected for its unique character, stunning location, and impeccable service standards.</p>
             </div>
           </div>
