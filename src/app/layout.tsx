@@ -15,7 +15,7 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bryan Villas - Luxury Villas in St. Lucia",
+  title: "Bryan's Villas - Luxury Villas in St. Lucia",
   description: "Discover our exclusive collection of three exceptional villas in the heart of St. Lucia. From intimate retreats to grand estates, find your perfect island sanctuary.",
 };
 
