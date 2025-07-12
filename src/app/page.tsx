@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ClientWrapper from '../components/ClientWrapper'
 import NewsletterForm from '../components/NewsletterForm'
+import MobileNav from '../components/MobileNav'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </nav>
+          <MobileNav />
         </div>
       </header>
 

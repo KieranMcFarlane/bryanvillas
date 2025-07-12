@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import ClientWrapper from '../../components/ClientWrapper'
+import MobileNav from '../../components/MobileNav'
 
 export default function Contact() {
   return (
@@ -26,6 +27,7 @@ export default function Contact() {
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </nav>
+          <MobileNav />
         </div>
       </header>
 

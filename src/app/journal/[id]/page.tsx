@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ClientWrapper from '../../../components/ClientWrapper'
 import NewsletterForm from '../../../components/NewsletterForm'
+import MobileNav from '../../../components/MobileNav'
 import { notFound } from 'next/navigation'
 
 // Article data - in a real app, this would come from a CMS or database
@@ -120,6 +121,7 @@ export default async function ArticlePage({ params }: PageProps) {
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </nav>
+          <MobileNav />
         </div>
       </header>
 
