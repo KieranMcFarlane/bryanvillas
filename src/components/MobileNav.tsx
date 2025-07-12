@@ -30,7 +30,7 @@ export default function MobileNav() {
           <Menu className="h-6 w-6" />
         </button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-80 bg-white">
+      <SheetContent side="left" className="w-80 bg-white border-r border-gray-200 sheet-content">
         <SheetHeader className="text-left">
           <SheetTitle className="flex items-center gap-3 mb-6">
             <Image
@@ -38,7 +38,7 @@ export default function MobileNav() {
               alt="Bryan's Villas Logo"
               width={64}
               height={28}
-              className="h-7 w-auto"
+              className="h-7 w-auto mobile-nav-logo"
             />
           </SheetTitle>
         </SheetHeader>

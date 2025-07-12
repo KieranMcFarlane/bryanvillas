@@ -1434,6 +1434,34 @@ footer::before {
         background-color: rgba(0, 0, 0, 0.1);
     }
     
+    /* Mobile nav logo - prevent filter from being applied */
+    .mobile-nav-logo {
+        filter: none !important;
+    }
+    
+    /* Fix sheet overlay to cover full screen and prevent white margins */
+    [data-radix-popper-content-wrapper] {
+        z-index: 50;
+    }
+    
+    /* Ensure sheet content is properly positioned */
+    .sheet-content {
+        position: fixed;
+        z-index: 51;
+    }
+    
+    /* Fix white margin issue when sheet is open */
+    body:has([data-state="open"]) {
+        overflow: hidden;
+    }
+    
+    /* Ensure overlay covers full viewport */
+    [data-radix-dialog-overlay] {
+        position: fixed !important;
+        inset: 0 !important;
+        z-index: 50 !important;
+    }
+    
     .newsletter-form-large form {
         flex-direction: column;
         gap: 15px;
