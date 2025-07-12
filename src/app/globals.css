@@ -68,6 +68,15 @@
   }
 }
 
+/* Prevent horizontal overflow */
+html {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 /* General Styling */
         :root {
             --primary-color: #345C65;
@@ -87,6 +96,7 @@ body {
     background-color: var(--white);
     font-size: 16px;
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -178,6 +188,9 @@ header.scrolled {
     background-color: var(--white);
     padding: 15px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 header .header-container {
@@ -1381,6 +1394,14 @@ footer::before {
 @media(max-width: 768px) {
     header .header-container {
         padding: 0 20px;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    header.scrolled {
+        width: 100vw;
+        left: 0;
+        right: 0;
     }
     .main-nav { 
         display: none; 
