@@ -213,7 +213,7 @@ export default function Villa() {
         <section className="quote-section section">
           <div className="container">
             <h3>What Makes This Property Special</h3>
-            <p>"The perfect holiday home with an abundance of space for entertaining. As well as the contemporary design and the incredible views. It would be impossible not to impress your friends and family with a stay at this villa."</p>
+            <p>&quot;The perfect holiday home with an abundance of space for entertaining. As well as the contemporary design and the incredible views. It would be impossible not to impress your friends and family with a stay at this villa.&quot;</p>
           </div>
         </section>
 

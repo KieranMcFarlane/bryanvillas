@@ -78,7 +78,7 @@ export default function About() {
           <div className="experiences-hero-background">
             <Image 
               src="/images/hero-bg.jpg"
-              alt="About Bryan's Villas"
+              alt="About Bryan&apos;s Villas"
               fill
               className="object-cover"
               priority
