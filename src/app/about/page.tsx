@@ -54,7 +54,7 @@ export default function About() {
           <Link href="/" className="logo">
             <Image 
               src="/images/logo-1.png" 
-              alt="Bryan's Villas Logo" 
+              alt="Bryan&apos;s Villas Logo" 
               width={129} 
               height={56} 
               className="h-14 w-auto mr-3"
@@ -86,7 +86,7 @@ export default function About() {
             <div className="experiences-hero-overlay">
               <div className="container">
                 <div className="experiences-hero-content">
-                  <h1>About Bryan's Villas</h1>
+                  <h1>About Bryan&apos;s Villas</h1>
                   <p>Curating exceptional villa experiences since 1996. We&apos;ve grown from a small family business to one of the world&apos;s leading luxury villa specialists, always maintaining our commitment to personal service and authentic experiences.</p>
                 </div>
               </div>
