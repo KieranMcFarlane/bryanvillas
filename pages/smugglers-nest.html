@@ -153,13 +153,201 @@
             align-items: center;
             gap: 4px;
         }
+        
+        /* Mobile Navigation */
+        .mobile-nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #14b8a6;
+        }
+        
+        .mobile-nav-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            padding: 80px 20px 20px;
+        }
+        
+        .mobile-nav-menu.active {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        .mobile-nav-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
+        .mobile-nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 15px 0;
+            padding: 10px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
+            text-align: center;
+        }
+        
+        .mobile-nav-menu a:hover {
+            color: #14b8a6;
+        }
+        
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .mobile-nav-toggle {
+                display: block;
+            }
+            
+            nav.hidden {
+                display: none !important;
+            }
+            
+            /* Gallery adjustments for mobile */
+            .gallery-section {
+                grid-template-columns: 1fr !important;
+                grid-template-rows: auto !important;
+                height: auto !important;
+                gap: 8px !important;
+            }
+            
+            .gallery-section > div {
+                height: 250px !important;
+            }
+            
+            .gallery-section > div:first-child {
+                height: 300px !important;
+            }
+            
+            /* Title overlay adjustments */
+            .gallery-section .absolute.bottom-8.left-8 h1 {
+                font-size: 2.5rem !important;
+            }
+            
+            .gallery-section .absolute.bottom-8.left-8 p {
+                font-size: 1rem !important;
+            }
+            
+            /* Main content layout */
+            .main-content-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            
+            /* Sidebar should come first on mobile */
+            .booking-sidebar {
+                order: -1;
+                position: static !important;
+                margin-bottom: 20px;
+            }
+            
+            /* Adjust text sizes for mobile */
+            .font-faustina.text-5xl {
+                font-size: 2.5rem !important;
+            }
+            
+            .font-faustina.text-3xl {
+                font-size: 1.8rem !important;
+            }
+            
+            .font-faustina.text-2xl {
+                font-size: 1.5rem !important;
+            }
+            
+            /* Button adjustments */
+            .gallery-button {
+                bottom: 10px !important;
+                left: 10px !important;
+                padding: 6px 12px !important;
+                font-size: 12px !important;
+            }
+            
+            .image-counter {
+                bottom: 10px !important;
+                right: 10px !important;
+                padding: 4px 8px !important;
+                font-size: 10px !important;
+            }
+            
+            /* Lightbox adjustments for mobile */
+            .lightbox-nav {
+                padding: 10px 15px !important;
+                font-size: 20px !important;
+            }
+            
+            .lightbox-prev {
+                left: 10px !important;
+            }
+            
+            .lightbox-next {
+                right: 10px !important;
+            }
+            
+            .lightbox-close {
+                top: 10px !important;
+                right: 10px !important;
+                padding: 8px 12px !important;
+                font-size: 24px !important;
+            }
+            
+            .lightbox-counter {
+                bottom: 10px !important;
+                padding: 8px 16px !important;
+                font-size: 12px !important;
+            }
+            
+            /* Form adjustments */
+            .booking-sidebar form {
+                padding: 20px !important;
+            }
+            
+            /* Grid adjustments for mobile */
+            .grid.grid-cols-2.sm\\:grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            .grid.grid-cols-1.md\\:grid-cols-2 {
+                grid-template-columns: 1fr !important;
+            }
+            
+            /* Header adjustments */
+            .container.mx-auto.px-4.py-3 {
+                padding: 12px 16px !important;
+            }
+            
+            /* Footer adjustments */
+            .grid.grid-cols-2.md\\:grid-cols-4.lg\\:grid-cols-5 {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            
+            .col-span-2.lg\\:col-span-1 {
+                grid-column: span 1 !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 <header class="shadow-md" style="background-color: #FDF6E6;">
 <div class="container mx-auto px-4 py-3 flex justify-between items-center">
 <div class="flex items-center">
-<a href="../index.html"><img src="../images/logo.png" alt="Bryan's Villas Logo" class="h-14 w-auto mr-3"></a>
+<a href="../index.html"><img src="../images/logo-1.png" alt="Bryan's Villas Logo" class="h-14 w-auto mr-3"></a>
 </div>
 <nav class="hidden md:flex space-x-6 text-gray-600">
 <a class="hover:text-teal-500" href="villas.html">Villas</a>
@@ -169,20 +357,36 @@
 <a class="hover:text-teal-500" href="contact.html">Contact</a>
 </nav>
 <div class="flex items-center space-x-4">
-<button class="text-gray-600 hover:text-teal-500">
+<button class="text-gray-600 hover:text-teal-500 hidden md:block">
 <span class="material-icons">search</span>
 </button>
-<button class="text-gray-600 hover:text-teal-500">
+<button class="text-gray-600 hover:text-teal-500 hidden md:block">
 <span class="material-icons">favorite_border</span>
 </button>
-<button class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm">My Enquiry</button>
+<button class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm hidden md:block">My Enquiry</button>
+<button class="mobile-nav-toggle md:hidden" onclick="toggleMobileNav()">
+<span class="material-icons">menu</span>
+</button>
 </div>
+</div>
+
+<!-- Mobile Navigation Menu -->
+<div id="mobile-nav" class="mobile-nav-menu">
+<button class="mobile-nav-close" onclick="toggleMobileNav()">
+<span class="material-icons">close</span>
+</button>
+<a href="villas.html">Villas</a>
+<a href="experiences.html">Experiences</a>
+<a href="journal.html">Journal</a>
+<a href="about.html">About Us</a>
+<a href="contact.html">Contact</a>
+<a href="#" class="bg-teal-500 text-white px-4 py-2 rounded-md hover:bg-teal-600 text-sm mt-4">My Enquiry</a>
 </div>
 </header>
 <main class="container mx-auto px-4 py-8">
 
 <!-- Gallery Section -->
-<section class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-2 mt-2 h-[600px] relative">
+<section class="gallery-section grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-2 mt-2 h-[600px] relative">
     <!-- Large Image: spans 2 rows on the left -->
     <div class="relative md:row-span-2 md:col-span-2 cursor-pointer gallery-item" data-index="0">
       <img 
@@ -248,7 +452,7 @@
     </div>
 </section>
   
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
+<div class="main-content-grid grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
 <div class="lg:col-span-2 space-y-8">
 <section>
 <div class="flex justify-between items-center mb-4">
@@ -367,7 +571,7 @@
 <p class="text-gray-600 text-sm">Standard booking terms and conditions apply. Please review these carefully before confirming your reservation. Specific conditions may apply for peak season bookings or special offers.</p>
 </section>
 </div>
-<aside class="bg-white p-6 rounded-lg shadow-lg h-fit sticky top-8">
+<aside class="booking-sidebar bg-white p-6 rounded-lg shadow-lg h-fit sticky top-8">
 <h3 class="font-faustina text-xl font-bold text-gray-700 mb-1">Book Smugglers Nest</h3>
 <p class="text-sm text-gray-500 mb-4">From <span class="font-bold text-gray-700">£1,250</span> per night</p>
 <form class="space-y-4">
@@ -637,6 +841,20 @@ document.addEventListener('click', function(e) {
         closeLightbox();
     }
 });
+
+// Mobile Navigation Toggle
+function toggleMobileNav() {
+    const mobileNav = document.getElementById('mobile-nav');
+    if (mobileNav) {
+        mobileNav.classList.toggle('active');
+        // Prevent body scroll when menu is open
+        if (mobileNav.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+}
 </script>
 
 </body></html> 

@@ -36,9 +36,9 @@ export default function MobileNav() {
             <Image
               src="/images/logo-1.png"
               alt="Bryan's Villas Logo"
-              width={64}
-              height={28}
-              className="h-7 w-auto mobile-nav-logo"
+              width={130}
+              height={56}
+              className="h-14 w-auto mobile-nav-logo"
             />
           </SheetTitle>
         </SheetHeader>

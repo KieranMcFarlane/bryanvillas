@@ -1409,6 +1409,11 @@ footer::before {
     .hero h1 { 
         font-size: 2.5rem; 
     }
+    
+    .hero-content {
+        padding: 0 30px !important;
+        max-width: 100% !important;
+    }
     .journal-hero .hero-content h1 {
         font-size: 2.5rem;
         color: var(--white);
@@ -1429,8 +1434,19 @@ footer::before {
     .footer-grid { 
         grid-template-columns: 1fr; 
     }
-    .footer-col:nth-child(n+2) {
+    .footer-col:nth-child(1) {
         display: none;
+    }
+    .footer-col:nth-child(2),
+    .footer-col:nth-child(3) {
+        display: none;
+    }
+    .footer-col:nth-child(4) {
+        display: block;
+    }
+    
+    .copyright {
+        padding-bottom: 40px;
     }
     
     /* Mobile nav button styling */
@@ -1468,7 +1484,7 @@ footer::before {
     /* Ensure sheet content is properly positioned */
     .sheet-content {
         position: fixed;
-        z-index: 51;
+        z-index: 1051;
     }
     
     /* Fix white margin issue when sheet is open */
@@ -1542,6 +1558,34 @@ footer::before {
     .cta-buttons .btn {
         width: 100%;
         text-align: center;
+        margin: 0 0 15px 0 !important;
+        padding: 18px 25px !important;
+        font-size: 0.9rem !important;
+    }
+    
+    .btn {
+        padding: 15px 25px !important;
+        font-size: 0.9rem !important;
+        margin: 0 10px 15px 0 !important;
+    }
+    
+    .btn-secondary {
+        margin-left: 0 !important;
+        margin-top: 15px !important;
+    }
+    
+    .hero .btn {
+        display: block !important;
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 10px auto !important;
+        text-align: center !important;
+    }
+    
+    .hero .btn-secondary {
+        margin-top: 15px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     
     /* Experience article page responsive */
@@ -1605,28 +1649,56 @@ footer::before {
     }
     
     .villa-content-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+        padding: 40px 0 !important;
     }
     
     .villa-sidebar {
-        position: static;
-        margin-top: 40px;
+        position: static !important;
+        margin-top: 40px !important;
+        order: -1;
+    }
+    
+    .villa-main-content {
+        order: 1;
     }
     
     .content-grid,
     .content-grid.reverse {
-        grid-template-columns: 1fr;
-        direction: ltr;
-        gap: 30px;
+        grid-template-columns: 1fr !important;
+        direction: ltr !important;
+        gap: 30px !important;
     }
     
     .content-grid.reverse .content-image {
-        order: -1;
+        order: -1 !important;
+    }
+    
+    .content-grid .content-image,
+    .content-grid .content-text {
+        width: 100% !important;
     }
     
     .amenities-list {
-        columns: 1;
+        columns: 1 !important;
+    }
+    
+    .villa-info-bar .container {
+        flex-direction: column !important;
+        gap: 15px !important;
+        align-items: center !important;
+    }
+    
+    .info-item {
+        flex-direction: column !important;
+        text-align: center !important;
+        min-width: auto !important;
+    }
+    
+    .bedrooms-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
     }
     
     .booking-bar .container {
@@ -1637,6 +1709,47 @@ footer::before {
     .footer-nav {
         flex-wrap: wrap;
         gap: 15px;
+    }
+    
+    /* Additional mobile fixes for villa page */
+    .villa-content-grid {
+        display: grid !important;
+    }
+    
+    .content-section {
+        padding: 40px 0 !important;
+    }
+    
+    .content-text h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    .villa-hero h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .villa-hero p {
+        font-size: 1rem !important;
+    }
+    
+    .booking-widget {
+        margin-bottom: 30px !important;
+    }
+    
+    /* Additional hero improvements for mobile */
+    .hero {
+        padding: 0 20px !important;
+    }
+    
+    .hero p {
+        font-size: 1rem !important;
+        margin-bottom: 40px !important;
+        line-height: 1.6 !important;
+    }
+    
+    /* Improve button spacing in hero */
+    .hero .btn:last-child {
+        margin-bottom: 0 !important;
     }
 }
 
